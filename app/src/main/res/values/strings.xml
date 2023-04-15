@@ -6,4 +6,6 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="loginWithId">Войдите с Яндекс ID</string>
+    <string name="mail">Почта</string>
+    <string name="telephone">Телефон</string>
 </resources>
