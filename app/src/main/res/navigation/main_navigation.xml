@@ -1,11 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
     app:startDestination="@id/startScreen">
 
     <fragment
         android:id="@+id/startScreen"
         android:name="com.birdushenin.yandexservices.presentation.StartScreen"
-        android:label="StartScreen" />
+        android:label="StartScreen" >
+        <action
+            android:id="@+id/action_startScreen_to_authorization"
+            app:destination="@id/authorization"
+            app:popUpTo="@id/startScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/authorization"
+        android:name="com.birdushenin.yandexservices.presentation.Authorization"
+        android:label="fragment_authorization"
+        tools:layout="@layout/fragment_authorization" >
+
+        <action
+            android:id="@+id/action_authorization_to_home2"
+            app:destination="@id/home2" />
+        <action
+            android:id="@+id/action_authorization_to_startScreen3"
+            app:destination="@id/startScreen" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.birdushenin.yandexservices.presentation.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
 </navigation>

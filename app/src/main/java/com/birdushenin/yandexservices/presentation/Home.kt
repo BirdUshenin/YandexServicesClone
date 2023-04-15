@@ -1,12 +1,21 @@
 package com.birdushenin.yandexservices.presentation
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.birdushenin.yandexservices.R
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.birdushenin.yandexservices.databinding.FragmentHomeBinding
 
-class Home : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+class Home : Fragment() {
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val binding = FragmentHomeBinding.inflate(layoutInflater)
+
+        return binding.root
     }
 }
