@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="ginger">#FF6331</color>
+    <color name="grey">#F1F2F5</color>
+    <color name="grey2">#D6D9E1</color>
 </resources>

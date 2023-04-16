@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="390dp"
+    android:layout_height="70dp"
+    android:gravity="center"
+    android:padding="7dp"
+    android:background="@drawable/switch_background"
+    >
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:background="@color/white"
+        tools:ignore="UselessParent">
+        <androidx.appcompat.widget.AppCompatRadioButton
+
+            android:id="@+id/rbLeft"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/mail"
+            android:checked="true"
+            android:gravity="center"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_button_left_selector"
+            android:layout_weight="1"
+
+            />
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbRight"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/telephone"
+            android:checked="false"
+            android:background="@drawable/radio_button_right_selector"
+            android:gravity="center"
+            android:button="@android:color/transparent"
+
+            android:layout_weight="1">
+        </androidx.appcompat.widget.AppCompatRadioButton>
+    </RadioGroup>
+
+
+</LinearLayout>
