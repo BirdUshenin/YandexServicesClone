@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.birdushenin.yandexservices.R
+import com.birdushenin.yandexservices.data.PasswordBase
 import com.birdushenin.yandexservices.databinding.FragmentAuthorizationBinding
 
 class Authorization : Fragment() {
@@ -20,11 +21,35 @@ class Authorization : Fragment() {
         binding.back.setOnClickListener{
             backToStartFragment()
         }
+        binding.buttonCome.setOnClickListener{
+            homeStart()
+        }
+
         return binding.root
     }
 
     private fun backToStartFragment(){
         findNavController().navigate(R.id.action_authorization_to_startScreen3)
+    }
+
+    private fun homeStart() {
+        val binding = FragmentAuthorizationBinding.bind(requireView())
+        val email = binding.editTextTextEmailAddress.text.toString()
+        val password = binding.TextPassword.text.toString()
+
+        when (email) {
+            PasswordBase.USERID1 -> {
+                if (password == PasswordBase.USERID1_PASSWORD) {
+                    findNavController().navigate(R.id.action_authorization_to_home2)
+                } else {
+                    binding.errorPassword.text = "Неверный пароль"
+                }
+            }
+            else -> {
+                binding.errorPassword.visibility = View.VISIBLE
+                binding.errorPassword.text = "Введите свой логин и пароль"
+            }
+        }
     }
 }
 
