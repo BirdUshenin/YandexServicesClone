@@ -60,35 +60,52 @@
         android:ems="10"
         android:hint="Логин или email"
         android:inputType="textEmailAddress"
-        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
         android:paddingTop="10dp"
-        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
         android:paddingBottom="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include" />
 
+    <EditText
+        android:id="@+id/TextPassword"
+        android:layout_width="307dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="Пароль"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        tools:ignore="MissingConstraints" />
+
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/errorPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/no_know_password"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="50dp"
+        android:text="@string/error_psw"
         android:textColor="@color/blue"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/TextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/TextPassword" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/button_come"
+        style="@style/ButtonCome"
         android:layout_width="307dp"
         android:layout_height="54dp"
-        android:text="Войти"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="50dp"
-        style="@style/ButtonCome"
+        android:text="@string/open_home"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        android:onClick="homeStart"
+        app:layout_constraintTop_toBottomOf="@+id/TextPassword" />
 
     <TextView
         android:id="@+id/textView3"
@@ -99,7 +116,6 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
+        app:layout_constraintTop_toBottomOf="@+id/button_come" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

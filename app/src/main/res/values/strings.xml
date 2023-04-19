@@ -10,4 +10,6 @@
     <string name="telephone">Телефон</string>
     <string name="no_know_password">Тестовый пароль</string>
     <string name="sozdate_id">Создать ID</string>
+    <string name="error_psw">Неверный пароль</string>
+    <string name="open_home">Войти</string>
 </resources>
