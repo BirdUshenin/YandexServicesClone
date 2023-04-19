@@ -10,4 +10,7 @@
     <color name="ginger">#FF6331</color>
     <color name="grey">#F1F2F5</color>
     <color name="grey2">#D6D9E1</color>
+    <color name="yellow">#FFDB4C</color>
+    <color name="yellow2">#FFCC00</color>
+    <color name="blue">#0037A5</color>
 </resources>

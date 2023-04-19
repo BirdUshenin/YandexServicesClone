@@ -8,4 +8,6 @@
     <string name="loginWithId">Войдите с Яндекс ID</string>
     <string name="mail">Почта</string>
     <string name="telephone">Телефон</string>
+    <string name="no_know_password">Тестовый пароль</string>
+    <string name="sozdate_id">Создать ID</string>
 </resources>
