@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/add">
+
+    <fragment
+        android:id="@+id/add"
+        android:name="com.birdushenin.yandexservices.presentation.Add"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/more"
+        android:name="com.birdushenin.yandexservices.presentation.More"
+        android:label="fragment_more"
+        tools:layout="@layout/fragment_more" />
+    <fragment
+        android:id="@+id/search"
+        android:name="com.birdushenin.yandexservices.presentation.Search"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/order"
+        android:name="com.birdushenin.yandexservices.presentation.Order"
+        android:label="fragment_order"
+        tools:layout="@layout/fragment_order" />
+</navigation>

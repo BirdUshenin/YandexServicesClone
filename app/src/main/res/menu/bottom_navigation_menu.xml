@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/ic_baseline_search_24" />
+    <item
+        android:id="@+id/add"
+        android:title="Order"
+        android:icon="@drawable/ic_baseline_add_box_24" />
+    <item
+        android:id="@+id/order"
+        android:title="My Order"
+        android:icon="@drawable/ic_baseline_web_24" />
+    <item
+        android:id="@+id/more"
+        android:title="More"
+        android:icon="@drawable/ic_baseline_more_horiz_24" />
+</menu>

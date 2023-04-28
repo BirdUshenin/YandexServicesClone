@@ -21,16 +21,15 @@
         tools:layout="@layout/fragment_authorization" >
 
         <action
-            android:id="@+id/action_authorization_to_home2"
-            app:destination="@id/home2" />
-        <action
             android:id="@+id/action_authorization_to_startScreen3"
             app:destination="@id/startScreen" />
-
+        <action
+            android:id="@+id/action_authorization_to_home6"
+            app:destination="@id/home6" />
     </fragment>
     <fragment
-        android:id="@+id/home2"
+        android:id="@+id/home6"
         android:name="com.birdushenin.yandexservices.presentation.Home"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        android:label="Home" />
+
 </navigation>
