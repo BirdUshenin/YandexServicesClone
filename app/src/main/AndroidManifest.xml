@@ -12,7 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.YandexServices"
         tools:targetApi="31">
-
+        <activity
+            android:name=".Hope"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Flow"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Homes"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".presentation.MainActivity"
             android:exported="true">

@@ -40,7 +40,7 @@ class Authorization : Fragment() {
         when (email) {
             PasswordBase.USERID1 -> {
                 if (password == PasswordBase.USERID1_PASSWORD) {
-                    findNavController().navigate(R.id.action_authorization_to_home2)
+                    findNavController().navigate(R.id.action_authorization_to_home6)
                 } else {
                     binding.errorPassword.text = "Неверный пароль"
                 }
