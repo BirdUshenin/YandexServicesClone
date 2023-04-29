@@ -12,4 +12,5 @@
     <string name="sozdate_id">Создать ID</string>
     <string name="error_psw">Неверный пароль</string>
     <string name="open_home">Войти</string>
+    <string name="search_specialist">Найти специалиста</string>
 </resources>
