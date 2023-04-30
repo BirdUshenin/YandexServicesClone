@@ -4,8 +4,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- Остальной контент фрагмента -->
-
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment_container_view_tag"
         android:layout_width="0dp"
