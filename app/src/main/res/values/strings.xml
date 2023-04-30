@@ -13,4 +13,16 @@
     <string name="error_psw">Неверный пароль</string>
     <string name="open_home">Войти</string>
     <string name="search_specialist">Найти специалиста</string>
+    <string name="technick">Установка техники</string>
+    <string name="electronika">Электронника</string>
+    <string name="stirka_car">Стиральные машины</string>
+    <string name="take_do">Поручите дела специалистам</string>
+    <string name="elektronika">Электронника</string>
+    <string name="santehnika">Сантехника</string>
+    <string name="himchistka">Химчистка</string>
+    <string name="dezinfekcia">Дезинфекция</string>
+    <string name="repair">Ремонт</string>
+    <string name="uborka">Уборка</string>
+    <string name="stirka">Стирка</string>
+    <string name="search_schetchik">Проверка счётчиков</string>
 </resources>
