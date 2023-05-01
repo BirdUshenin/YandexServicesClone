@@ -5,7 +5,7 @@
         android:icon="@drawable/ic_baseline_search_24" />
     <item
         android:id="@+id/add"
-        android:title="Новости"
+        android:title="@string/news"
         android:icon="@drawable/ic_baseline_newspaper_24" />
     <item
         android:id="@+id/order"
