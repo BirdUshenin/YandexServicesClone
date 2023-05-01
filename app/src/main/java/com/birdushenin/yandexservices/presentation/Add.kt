@@ -1,60 +1,66 @@
 package com.birdushenin.yandexservices.presentation
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.birdushenin.yandexservices.R
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.birdushenin.yandexservices.databinding.FragmentAddBinding
+import com.birdushenin.yandexservices.domain.NewsService
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [Add.newInstance] factory method to
- * create an instance of this fragment.
- */
 class Add : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    // Экземпляр адаптера
+    private val adapter = NewsAdapter()
+    private val binding = FragmentAddBinding.inflate(layoutInflater)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_add, container, false)
+    ): View {
+
+        val retrofit = Retrofit.Builder()
+            .baseUrl("https://newsapi.org/v2/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+        val newsService = retrofit.create(NewsService::class.java)
+
+        //RecyclerView
+        val recyclerView = binding.recyclerView
+        recyclerView.layoutManager = LinearLayoutManager(context)
+        recyclerView.adapter = adapter
+
+        binding.progressBar.visibility = View.VISIBLE
+
+        // Улучшить потом вызывов loadNews() внутри корутины
+        lifecycleScope.launch {
+            loadNews(newsService)
+            binding.progressBar.visibility = View.GONE
+        }
+
+        return binding.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment Add.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            Add().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
+    private suspend fun loadNews(newsService: NewsService) {
+        val apiKey = "eae4e313c2d043c183e78149bc172501"
+
+        try {
+            val response = newsService.getTopHeadlines(apiKey = apiKey)
+            if (response.isSuccessful) {
+                val newsList = response.body()?.articles ?: emptyList()
+                withContext(Dispatchers.Main) {
+                    adapter.submitList(newsList)
                 }
             }
+        } catch (e: Exception) {
+            // Ошибки если вдруг
+        }
     }
 }
