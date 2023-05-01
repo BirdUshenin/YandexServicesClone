@@ -9,11 +9,6 @@ import com.birdushenin.yandexservices.R
 
 
 
-/**
- * A simple [Fragment] subclass.
- * Use the [More.newInstance] factory method to
- * create an instance of this fragment.
- */
 class More : Fragment() {
 
 
