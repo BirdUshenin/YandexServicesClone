@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.birdushenin.yandexservices.R
@@ -24,6 +25,9 @@ class Authorization : Fragment() {
         binding.buttonCome.setOnClickListener{
             homeStart()
         }
+
+        activity?.window?.statusBarColor =
+            ContextCompat.getColor(requireContext(), R.color.yellow4)
 
         return binding.root
     }
