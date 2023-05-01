@@ -5,12 +5,12 @@
         android:icon="@drawable/ic_baseline_search_24" />
     <item
         android:id="@+id/add"
-        android:title="Создать заказ"
-        android:icon="@drawable/ic_baseline_add_box_24" />
+        android:title="Новости"
+        android:icon="@drawable/ic_baseline_newspaper_24" />
     <item
         android:id="@+id/order"
         android:title="Мои заказы"
-        android:icon="@drawable/ic_baseline_web_24" />
+        android:icon="@drawable/ic_baseline_rocket_launch_24" />
     <item
         android:id="@+id/more"
         android:title="Ещё"
