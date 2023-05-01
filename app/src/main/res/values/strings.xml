@@ -35,4 +35,5 @@
     <string name="rent">Аренда</string>
     <string name="repair_auto">Ремонт авто</string>
     <string name="look_all_services">Посмотреть все услуги</string>
+    <string name="search_d">Поиск</string>
 </resources>
