@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.birdushenin.yandexservices.R
 import com.birdushenin.yandexservices.databinding.FragmentAddBinding
 import com.birdushenin.yandexservices.domain.NewsService
 import kotlinx.coroutines.Dispatchers
