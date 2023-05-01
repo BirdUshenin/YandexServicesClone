@@ -19,13 +19,12 @@ class Add : Fragment() {
 
     // Экземпляр адаптера
     private val adapter = NewsAdapter()
-    private val binding = FragmentAddBinding.inflate(layoutInflater)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
+        val binding = FragmentAddBinding.inflate(layoutInflater)
         val retrofit = Retrofit.Builder()
             .baseUrl("https://newsapi.org/v2/")
             .addConverterFactory(GsonConverterFactory.create())
