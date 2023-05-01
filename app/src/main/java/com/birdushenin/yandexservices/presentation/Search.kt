@@ -1,22 +1,24 @@
 package com.birdushenin.yandexservices.presentation
 
-import android.graphics.Bitmap
+import android.annotation.SuppressLint
 import android.graphics.BitmapFactory
+import android.graphics.Color
+import android.graphics.drawable.GradientDrawable
+import android.os.Build
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.ImageView
+import android.view.*
+import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory
+import androidx.fragment.app.Fragment
 import com.birdushenin.yandexservices.R
-import com.birdushenin.yandexservices.databinding.FragmentHomeBinding
 import com.birdushenin.yandexservices.databinding.FragmentSearchBinding
+
 
 class Search : Fragment() {
 
     private lateinit var binding: FragmentSearchBinding
 
+    @SuppressLint("SuspiciousIndentation")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -30,7 +32,9 @@ class Search : Fragment() {
         roundedDrawable.cornerRadius = 155.toFloat()
         binding.imageView7.setImageDrawable(roundedDrawable)
 
+        activity?.window?.statusBarColor = Color.TRANSPARENT
+            activity?.window?.setBackgroundDrawableResource(R.drawable.gradient_for_status_bar)
+
         return binding.root
     }
-
 }
