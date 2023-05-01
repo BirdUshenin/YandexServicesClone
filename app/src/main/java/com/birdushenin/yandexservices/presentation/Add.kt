@@ -26,7 +26,6 @@ class Add : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
         val binding = FragmentAddBinding.inflate(layoutInflater)
         val retrofit = Retrofit.Builder()
             .baseUrl("https://newsapi.org/v2/")
