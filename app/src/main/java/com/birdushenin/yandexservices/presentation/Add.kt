@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.birdushenin.yandexservices.R
 import com.birdushenin.yandexservices.databinding.FragmentAddBinding
 import com.birdushenin.yandexservices.domain.NewsService
 import kotlinx.coroutines.Dispatchers
@@ -19,13 +21,13 @@ class Add : Fragment() {
 
     // Экземпляр адаптера
     private val adapter = NewsAdapter()
-    private val binding = FragmentAddBinding.inflate(layoutInflater)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
 
+        val binding = FragmentAddBinding.inflate(layoutInflater)
         val retrofit = Retrofit.Builder()
             .baseUrl("https://newsapi.org/v2/")
             .addConverterFactory(GsonConverterFactory.create())
