@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
 import com.birdushenin.yandexservices.R
 import com.birdushenin.yandexservices.databinding.FragmentStartScreenBinding
@@ -21,6 +22,8 @@ class StartScreen : Fragment() {
         binding.LoginSpecialist.setOnClickListener{
             launchAuthorization()
         }
+        activity?.window?.statusBarColor =
+            ContextCompat.getColor(requireContext(), R.color.yellow4)
         return binding.root
     }
 
