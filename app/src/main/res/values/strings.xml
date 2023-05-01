@@ -37,4 +37,5 @@
     <string name="look_all_services">Посмотреть все услуги</string>
     <string name="search_d">Поиск</string>
     <string name="news">Новости</string>
+    <string name="orders">Мои заказы</string>
 </resources>

@@ -9,7 +9,7 @@
         android:icon="@drawable/ic_baseline_newspaper_24" />
     <item
         android:id="@+id/order"
-        android:title="Мои заказы"
+        android:title="@string/orders"
         android:icon="@drawable/ic_baseline_rocket_launch_24" />
     <item
         android:id="@+id/more"
