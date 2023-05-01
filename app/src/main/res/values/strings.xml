@@ -25,4 +25,14 @@
     <string name="uborka">Уборка</string>
     <string name="stirka">Стирка</string>
     <string name="search_schetchik">Проверка счётчиков</string>
+    <string name="catalog_in_nn">Каталог услуг в Нижнем Новгороде</string>
+    <string name="describe_problem">Опишите задачу, а мастера сами предложат свои услуги. Выберите исполнителя по рейтингу и отзывами других клиентов. Договоритесь о цене самостоятельно</string>
+    <string name="repair_and_сonstruction">Ремонт и строительство</string>
+    <string name="lawyers">Юристы</string>
+    <string name="courier">Перевозки и курьеры</string>
+    <string name="computer_and_it">Компьютеры и IT</string>
+    <string name="beauty">Красота</string>
+    <string name="rent">Аренда</string>
+    <string name="repair_auto">Ремонт авто</string>
+    <string name="look_all_services">Посмотреть все услуги</string>
 </resources>

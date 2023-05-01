@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="680dp"
-    android:background="@color/blue2">
+
+    android:background="@drawable/for_search_middle">
 
     <View
         android:id="@+id/view"

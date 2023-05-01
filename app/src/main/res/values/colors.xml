@@ -13,6 +13,14 @@
     <color name="grey2">#D6D9E1</color>
     <color name="yellow">#FFDB4C</color>
     <color name="yellow2">#FFCC00</color>
+    <color name="yellow3">#FEFAE5</color>
     <color name="blue">#0037A5</color>
     <color name="blue2">#F1F6FA</color>
+    <color name="status_bar_start">#A68802</color>
+    <color name="status_bar_end">#000000</color>
+
+    <color name="bottom_nav_item_text_color_normal">#A5A5A5</color>
+    <color name="bottom_nav_item_text_color_selected">#000000</color>
+    <color name="bottom_nav_item_icon_color_normal">#A5A5A5</color>
+    <color name="bottom_nav_item_icon_color_selected">#000000</color>
 </resources>
