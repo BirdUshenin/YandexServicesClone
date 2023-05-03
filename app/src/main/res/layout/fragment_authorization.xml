@@ -59,7 +59,7 @@
         android:autofillHints="fx"
         android:background="@drawable/edit_text_style"
         android:ems="10"
-        android:hint="Логин или email"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:paddingStart="20dp"
         android:paddingTop="10dp"
@@ -75,7 +75,7 @@
         android:layout_height="64dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/edit_text_style"
-        android:hint="Пароль"
+        android:hint="@string/passworsd"
         android:ems="10"
         android:inputType="textPassword"
         android:paddingStart="20dp"
@@ -107,7 +107,6 @@
         android:text="@string/open_home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="homeStart"
         app:layout_constraintTop_toBottomOf="@+id/TextPassword" />
 
     <TextView
@@ -120,7 +119,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_come" />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
