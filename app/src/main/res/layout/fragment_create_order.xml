@@ -14,7 +14,7 @@
         android:layout_marginStart="5dp"
         android:clickable="true"
         android:focusable="true"
-        android:text="Назад"
+        android:text="@string/back"
         android:textColor="@color/black"
         android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView12"
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="Что нужно сделать?"
+        android:text="@string/that_need_do"
         android:textColor="@color/black"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -40,13 +40,13 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/edit_text_work"
         android:ems="10"
-        android:hint="Короткое название вашей задачи"
+        android:hint="@string/short_name"
         android:paddingStart="15dp"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView32"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,RtlSymmetry" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -55,13 +55,14 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/edit_text_work"
         android:ems="10"
-        android:hint="Расскажите подробнее о задаче"
+        android:hint="@string/aboutall"
         android:paddingStart="15dp"
         android:paddingBottom="50dp"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        tools:ignore="RtlSymmetry" />
 
     <ImageView
         android:id="@+id/imageView12"
@@ -99,7 +100,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:text="+7 (940) 820 35 75"
+        android:text="@string/_7_940_820_35_75"
         android:textColor="@color/create_order_b"
         app:layout_constraintBottom_toBottomOf="@+id/imageView30"
         app:layout_constraintStart_toEndOf="@+id/imageView30"
@@ -118,7 +119,7 @@
         android:layout_width="280dp"
         android:layout_height="42dp"
         android:background="@drawable/button_main"
-        android:text="Опубликовать"
+        android:text="@string/publish"
         android:textColor="@color/white"
         android:textSize="13sp"
         android:layout_marginTop="20dp"
@@ -131,7 +132,7 @@
         android:layout_width="260dp"
         android:layout_marginTop="5dp"
         android:layout_height="wrap_content"
-        android:text="Исполнители не видят ваш номер телефона и не могут звонить вам сами"
+        android:text="@string/ispolnitel"
         android:textColor="@color/create_order_b"
         app:layout_constraintStart_toStartOf="@+id/textView34"
         app:layout_constraintTop_toBottomOf="@+id/textView34" />

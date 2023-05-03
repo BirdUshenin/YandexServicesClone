@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:gravity="center"
-            android:text="Вы ещё не создавали заказы — время начать!"
+            android:text="@string/need_time"
             android:textColor="@color/black"
             android:textSize="17sp"
             android:textStyle="bold"
@@ -91,15 +91,12 @@
             android:layout_height="wrap_content"
             android:textSize="15sp"
             android:layout_marginTop="10dp"
-            android:text="1. Разместите заказ"
+            android:text="@string/take_order"
             android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/imageView27"
             app:layout_constraintStart_toStartOf="@+id/imageView27"
             app:layout_constraintTop_toBottomOf="@+id/imageView27" />
-
-
-
 
         <TextView
             android:id="@+id/textView26"
@@ -108,7 +105,7 @@
             android:gravity="center"
             android:textSize="15sp"
             android:layout_marginTop="10dp"
-            android:text="Опишите задачу. Если нужно, укажите сроки и бюджет"
+            android:text="@string/check_work"
             app:layout_constraintEnd_toEndOf="@+id/textView27"
             app:layout_constraintStart_toStartOf="@+id/textView27"
             app:layout_constraintTop_toBottomOf="@+id/textView27" />
@@ -131,7 +128,7 @@
             android:textStyle="bold"
             android:textSize="15sp"
             android:layout_marginTop="10dp"
-            android:text="2. Получите предложения"
+            android:text="@string/get_offer"
             app:layout_constraintEnd_toEndOf="@+id/imageView28"
             app:layout_constraintStart_toStartOf="@+id/imageView28"
             app:layout_constraintTop_toBottomOf="@+id/imageView28" />
@@ -142,7 +139,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Испольнители сами откликаются на ваш заказ. Обсудите детали заказа в чате или по телефону"
+            android:text="@string/need_new_order"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="@+id/textView28"
             app:layout_constraintStart_toStartOf="@+id/textView28"
@@ -166,7 +163,7 @@
             android:textStyle="bold"
             android:textSize="15sp"
             android:layout_marginTop="10dp"
-            android:text="3. Выберите исполнителя"
+            android:text="@string/choose_executor"
             app:layout_constraintEnd_toEndOf="@+id/imageView29"
             app:layout_constraintStart_toStartOf="@+id/imageView29"
             app:layout_constraintTop_toBottomOf="@+id/imageView29" />
@@ -175,7 +172,7 @@
             android:id="@+id/textView31"
             android:layout_width="290dp"
             android:layout_height="wrap_content"
-            android:text="Выберите подходящего вам исполнителя по рейтингу, отзывам и цене"
+            android:text="@string/choose_rating_executor"
             android:textSize="15sp"
             android:layout_marginTop="10dp"
             android:gravity="center"
@@ -190,14 +187,13 @@
             android:layout_marginTop="40dp"
             android:layout_marginBottom="40dp"
             android:background="@drawable/button_main"
-            android:text="Создать заказ"
+            android:text="@string/create_order"
             android:textSize="13sp"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView31" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

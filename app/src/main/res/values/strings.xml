@@ -39,4 +39,21 @@
     <string name="news">Новости</string>
     <string name="orders">Мои заказы</string>
     <string name="more">Ещё</string>
+    <string name="email">Логин или email</string>
+    <string name="passworsd">Пароль</string>
+    <string name="publish">Опубликовать</string>
+    <string name="ispolnitel">Исполнители не видят ваш номер телефона и не могут звонить вам сами</string>
+    <string name="_7_940_820_35_75">+7 (940) 820 35 75</string>
+    <string name="aboutall">Расскажите подробнее о задаче</string>
+    <string name="short_name">Короткое название вашей задачи</string>
+    <string name="that_need_do">Что нужно сделать?</string>
+    <string name="back">Назад</string>
+    <string name="need_time">Вы ещё не создавали заказы — время начать!</string>
+    <string name="take_order">1. Разместите заказ</string>
+    <string name="check_work">Опишите задачу. Если нужно, укажите сроки и бюджет</string>
+    <string name="need_new_order">Испольнители сами откликаются на ваш заказ. Обсудите детали заказа в чате или по телефону</string>
+    <string name="choose_executor">3. Выберите исполнителя</string>
+    <string name="choose_rating_executor">Выберите подходящего вам исполнителя по рейтингу, отзывам и цене</string>
+    <string name="create_order">Создать заказ</string>
+    <string name="get_offer">2. Получите предложения</string>
 </resources>
