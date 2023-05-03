@@ -20,6 +20,9 @@
     <color name="status_bar_start">#A68802</color>
     <color name="status_bar_end">#000000</color>
 
+    <color name="create_order_a">#FFB196</color>
+    <color name="create_order_b">#ABBDC9</color>
+
     <color name="bottom_nav_item_text_color_normal">#A5A5A5</color>
     <color name="bottom_nav_item_text_color_selected">#000000</color>
     <color name="bottom_nav_item_icon_color_normal">#A5A5A5</color>

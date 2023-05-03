@@ -24,5 +24,18 @@
         android:id="@+id/order"
         android:name="com.birdushenin.yandexservices.presentation.Order"
         android:label="fragment_order"
-        tools:layout="@layout/fragment_order" />
+        tools:layout="@layout/fragment_order" >
+        <action
+            android:id="@+id/action_order_to_createOrder"
+            app:destination="@id/createOrder" />
+    </fragment>
+    <fragment
+        android:id="@+id/createOrder"
+        android:name="com.birdushenin.yandexservices.presentation.CreateOrder"
+        android:label="fragment_create_order"
+        tools:layout="@layout/fragment_create_order" >
+        <action
+            android:id="@+id/action_createOrder_to_order"
+            app:destination="@id/order" />
+    </fragment>
 </navigation>
