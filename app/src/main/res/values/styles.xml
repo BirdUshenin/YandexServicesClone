@@ -6,4 +6,8 @@
     <style name="ButtonCome">
         <item name="android:background">@drawable/button_come_a</item>
     </style>
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@drawable/rounded</item>
+    </style>
 </resources>

@@ -56,4 +56,13 @@
     <string name="choose_rating_executor">Выберите подходящего вам исполнителя по рейтингу, отзывам и цене</string>
     <string name="create_order">Создать заказ</string>
     <string name="get_offer">2. Получите предложения</string>
+    <string name="Cabinet">Кабинет исполнителя</string>
+    <string name="Stay_Executor">Стать исполнителем</string>
+    <string name="Support_and_Servies">Поддержка и сервис</string>
+    <string name="Whrite_Support">Написать в поддержку</string>
+    <string name="Blog">Блог</string>
+    <string name="About_Services">О сервисе</string>
+    <string name="FAQ">Вопросы и ответы</string>
+    <string name="User_greement">Пользовательское соглашение</string>
+    <string name="For_legal_issues">По юридическим вопросам</string>
 </resources>
