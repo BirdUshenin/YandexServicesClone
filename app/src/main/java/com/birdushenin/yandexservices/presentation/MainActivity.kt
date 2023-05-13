@@ -1,8 +1,8 @@
 package com.birdushenin.yandexservices.presentation
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.birdushenin.yandexservices.R
 
 class MainActivity : AppCompatActivity() {
