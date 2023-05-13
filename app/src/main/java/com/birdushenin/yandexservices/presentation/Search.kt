@@ -3,16 +3,12 @@ package com.birdushenin.yandexservices.presentation
 import android.annotation.SuppressLint
 import android.graphics.BitmapFactory
 import android.graphics.Color
-import android.graphics.drawable.GradientDrawable
-import android.os.Build
 import android.os.Bundle
 import android.view.*
-import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory
 import androidx.fragment.app.Fragment
 import com.birdushenin.yandexservices.R
 import com.birdushenin.yandexservices.databinding.FragmentSearchBinding
-
 
 class Search : Fragment() {
 
