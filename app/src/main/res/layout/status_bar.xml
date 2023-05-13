@@ -5,5 +5,4 @@
     android:layout_height="?attr/actionBarSize"
     android:orientation="vertical"
     android:background="@drawable/gradient_for_status_bar">
-
 </LinearLayout>

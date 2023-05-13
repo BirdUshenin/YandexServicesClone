@@ -10,11 +10,7 @@
         android:name="com.birdushenin.yandexservices.presentation.Add"
         android:label="fragment_add"
         tools:layout="@layout/fragment_add" />
-    <fragment
-        android:id="@+id/more"
-        android:name="com.birdushenin.yandexservices.presentation.More"
-        android:label="fragment_more"
-        tools:layout="@layout/fragment_more" />
+
     <fragment
         android:id="@+id/search"
         android:name="com.birdushenin.yandexservices.presentation.Search"
@@ -38,4 +34,8 @@
             android:id="@+id/action_createOrder_to_order"
             app:destination="@id/order" />
     </fragment>
+    <dialog
+        android:id="@+id/myBottomSheet"
+        android:name="com.birdushenin.yandexservices.presentation.MyBottomSheet"
+        android:label="MyBottomSheet" />
 </navigation>
