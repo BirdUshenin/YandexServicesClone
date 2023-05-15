@@ -30,6 +30,15 @@
     <fragment
         android:id="@+id/home6"
         android:name="com.birdushenin.yandexservices.presentation.Home"
-        android:label="Home" />
+        android:label="Home" >
+        <action
+            android:id="@+id/action_home6_to_prompt"
+            app:destination="@id/prompt" />
+    </fragment>
+    <fragment
+        android:id="@+id/prompt"
+        android:name="com.birdushenin.yandexservices.presentation.Prompt"
+        android:label="fragment_prompt"
+        tools:layout="@layout/fragment_prompt" />
 
 </navigation>
