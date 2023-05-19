@@ -45,7 +45,14 @@
         android:id="@+id/prompt"
         android:name="com.birdushenin.yandexservices.presentation.Prompt"
         android:label="fragment_prompt"
-        tools:layout="@layout/fragment_prompt" />
+        tools:layout="@layout/fragment_prompt" >
+        <action
+            android:id="@+id/action_prompt_to_search2"
+            app:destination="@id/search2" />
+        <action
+            android:id="@+id/action_prompt_to_home62"
+            app:destination="@id/home6" />
+    </fragment>
     <fragment
         android:id="@+id/test"
         android:name="com.birdushenin.yandexservices.presentation.Test"
@@ -54,5 +61,9 @@
         android:id="@+id/testTwo"
         android:name="com.birdushenin.yandexservices.presentation.TestTwo"
         android:label="TestTwo" />
+    <fragment
+        android:id="@+id/search2"
+        android:name="com.birdushenin.yandexservices.presentation.Search"
+        android:label="Search" />
 
 </navigation>

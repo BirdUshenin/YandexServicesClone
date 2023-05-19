@@ -6,8 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.birdushenin.yandexservices.R
 import com.birdushenin.yandexservices.databinding.FragmentPromptBinding
 import com.birdushenin.yandexservices.presentation.adapter.RecyclerViewHorizontal
 import kotlinx.coroutines.CoroutineScope
@@ -55,7 +57,18 @@ class Prompt : Fragment() {
             LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
         recyclerView.adapter = adapter
 
+        binding.button.setOnClickListener{
+            StartSearch()
+        }
+        binding.imageView33.setOnClickListener{
+            StartSearch()
+        }
+
         return binding.root
+    }
+
+    private fun StartSearch() {
+        findNavController().navigate(R.id.action_prompt_to_home62)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
