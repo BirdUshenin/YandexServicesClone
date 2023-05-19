@@ -29,7 +29,7 @@
     <color name="bottom_nav_item_icon_color_normal">#A5A5A5</color>
     <color name="bottom_nav_item_icon_color_selected">#000000</color>
 
-
+    <color name="white_prompt_color">#F7F7F7</color>
     <color name="default_text_color">#000000</color>
     <color name="your_desired_color">#FF0000</color>
 </resources>
