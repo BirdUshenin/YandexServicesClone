@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F7F7F7">
+
+
+    <TextView
+        android:id="@+id/text_help"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Поможем с подбором исполнителя"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/constraint"
+        app:layout_constraintStart_toStartOf="@+id/constraint"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_help">
+
+        <View
+            android:id="@+id/view12"
+            android:layout_width="330dp"
+            android:layout_height="500dp"
+            android:background="@drawable/fixed_saviper"
+            tools:ignore="MissingConstraints">
+
+        </View>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"
+            android:text="@string/choose_executor_which"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/view12"
+            app:layout_constraintStart_toStartOf="@+id/view12"
+            app:layout_constraintTop_toTopOf="@+id/view12" />
+
+        <ImageView
+            android:id="@+id/imageView39"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="20dp"
+
+            android:background="@drawable/fixed_swiper_image"
+            android:src="@drawable/person"
+            app:layout_constraintBottom_toBottomOf="@+id/view12"
+            app:layout_constraintEnd_toEndOf="@+id/view12"
+            app:layout_constraintStart_toStartOf="@+id/view12">
+
+        </ImageView>
+
+
+        <View
+            android:id="@+id/view13"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="-10dp"
+            android:background="@drawable/fixed_swiper_a"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView39"
+            app:layout_constraintEnd_toEndOf="@+id/imageView39">
+
+        </View>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="197 отзывов"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/view13"
+            app:layout_constraintEnd_toEndOf="@+id/view13"
+            app:layout_constraintStart_toStartOf="@+id/view13"
+            app:layout_constraintTop_toTopOf="@+id/view13" />
+
+        <View
+            android:id="@+id/view14"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="-10dp"
+            android:background="@drawable/fixed_swiper_y"
+
+            app:layout_constraintBottom_toBottomOf="@+id/view13"
+            app:layout_constraintEnd_toStartOf="@+id/view13">
+
+        </View>
+
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:src="@drawable/stars"
+            app:layout_constraintBottom_toBottomOf="@+id/view14"
+            app:layout_constraintEnd_toEndOf="@+id/view14"
+            app:layout_constraintStart_toStartOf="@+id/view14"
+            app:layout_constraintTop_toTopOf="@+id/view14" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/constraint2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraint">
+
+        <View
+            android:id="@+id/bottom"
+            android:layout_width="330dp"
+            android:layout_height="500dp"
+            android:background="@drawable/fixed_saviper"
+            tools:ignore="MissingConstraints">
+
+        </View>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

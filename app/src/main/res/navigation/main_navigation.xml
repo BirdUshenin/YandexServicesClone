@@ -13,6 +13,12 @@
             android:id="@+id/action_startScreen_to_authorization"
             app:destination="@id/authorization"
             app:popUpTo="@id/startScreen" />
+        <action
+            android:id="@+id/action_startScreen_to_test"
+            app:destination="@id/test" />
+        <action
+            android:id="@+id/action_startScreen_to_testTwo"
+            app:destination="@id/testTwo" />
     </fragment>
     <fragment
         android:id="@+id/authorization"
@@ -40,5 +46,13 @@
         android:name="com.birdushenin.yandexservices.presentation.Prompt"
         android:label="fragment_prompt"
         tools:layout="@layout/fragment_prompt" />
+    <fragment
+        android:id="@+id/test"
+        android:name="com.birdushenin.yandexservices.presentation.Test"
+        android:label="Test" />
+    <fragment
+        android:id="@+id/testTwo"
+        android:name="com.birdushenin.yandexservices.presentation.TestTwo"
+        android:label="TestTwo" />
 
 </navigation>

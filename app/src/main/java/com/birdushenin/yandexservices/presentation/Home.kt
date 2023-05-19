@@ -38,10 +38,10 @@ class Home : Fragment() {
 
         val isPromptShown = sharedPreferences.getBoolean(isPromptShownKey, false)
         if (!isPromptShown) {
-            // Подсказка не была показана, открываем фрагмент Prompt
+            // Подсказка не была показана (Prompt управление)
             findNavController().navigate(R.id.action_home6_to_prompt)
 
-            // Сохраняем информацию о том, что подсказка была показана
+            // Информация о том, что подсказка была показана
             sharedPreferences.edit().putBoolean(isPromptShownKey, true).apply()
         }
 
