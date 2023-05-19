@@ -10,8 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#F7F7F7"
-        tools:context=".presentation.Search"
-        >
+        tools:context=".presentation.Search">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -28,25 +27,21 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints">
 
-
             <ImageView
                 android:id="@+id/imageView32"
                 android:layout_width="420dp"
                 android:layout_height="350dp"
                 android:src="@drawable/girlcl"
-
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
 
             <TextView
                 android:id="@+id/textView40"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-
-                android:text="Привет, это Яндекс Услуги!"
+                android:text="@string/hi_this_yandex"
                 android:textColor="@color/white"
                 android:textSize="23sp"
                 app:layout_constraintEnd_toEndOf="@+id/imageView35"
@@ -82,13 +77,10 @@
                 android:layout_height="40dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
-
                 android:src="@drawable/ic_baseline_clear_24"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/doa"
@@ -97,7 +89,6 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/constraint3"
             android:background="@drawable/fixed_prompt_color">
-
 
             <pl.droidsonroids.gif.GifImageView
                 android:id="@+id/imageView34"
@@ -114,7 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Предложите ваше задание"
+                android:text="@string/comegone_your_task"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -123,25 +114,21 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageView34" />
 
             <androidx.recyclerview.widget.RecyclerView
-
                 android:id="@+id/recyclerView"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView46" />
         </androidx.constraintlayout.widget.ConstraintLayout>
+
         <include
             android:id="@+id/include2"
             layout="@layout/middle_prompt"
             android:layout_width="380dp"
-
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/doa" />
-
-
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
