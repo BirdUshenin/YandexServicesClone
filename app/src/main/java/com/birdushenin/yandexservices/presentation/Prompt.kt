@@ -31,10 +31,8 @@ class Prompt : Fragment() {
     ): View {
         binding = FragmentPromptBinding.inflate(layoutInflater)
 
-        val scrollView = binding.scrollView // Идентификатор вашего ScrollView из XML
+        val scrollView = binding.scrollView
         val constraintLayout = binding.constraint3
-
-
         val constraintLayoutOriginalY = constraintLayout.y
 
         scrollView.viewTreeObserver.addOnScrollChangedListener {
