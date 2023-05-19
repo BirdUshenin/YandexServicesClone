@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="662dp"
+    android:layout_width="900dp"
     android:layout_height="280dp"
     android:layout_marginTop="10dp">
 
@@ -17,13 +17,194 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
+        android:id="@+id/view15"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/fixed_swiper_y"
+        app:layout_constraintStart_toStartOf="@+id/textView47"
+        app:layout_constraintTop_toTopOf="@+id/item1" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_settings_input_component_24"
+        app:layout_constraintBottom_toBottomOf="@+id/view15"
+        app:layout_constraintEnd_toEndOf="@+id/view15"
+        app:layout_constraintStart_toStartOf="@+id/view15"
+        app:layout_constraintTop_toTopOf="@+id/view15" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Обслуживание газовой колонки"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/item1"
+        app:layout_constraintStart_toStartOf="@+id/item1"
+        app:layout_constraintTop_toBottomOf="@+id/view15" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Сделали\n59 мин. назад"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/item1"
+        app:layout_constraintStart_toStartOf="@+id/textView47" />
+
+    <View
         android:id="@+id/item2"
         android:layout_width="210dp"
         android:layout_height="260dp"
-        android:background="@drawable/for_row"
-        app:layout_constraintStart_toEndOf="@+id/item1"
         android:layout_marginStart="15dp"
+        android:background="@drawable/for_row"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item1"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/mot"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/fixed_swiper_y"
+        app:layout_constraintStart_toStartOf="@+id/got"
+        app:layout_constraintTop_toTopOf="@+id/item2" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_wc_24"
+        app:layout_constraintBottom_toBottomOf="@+id/mot"
+        app:layout_constraintEnd_toEndOf="@+id/mot"
+        app:layout_constraintStart_toStartOf="@+id/mot"
+        app:layout_constraintTop_toTopOf="@+id/mot" />
+
+    <TextView
+        android:id="@+id/got"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Уложить плитку в ванной"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/item2"
+        app:layout_constraintStart_toStartOf="@+id/item2"
+        app:layout_constraintTop_toBottomOf="@+id/mot" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Сделали\n1 ч. назад"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/item2"
+        app:layout_constraintStart_toStartOf="@+id/got" />
+
+    <View
+        android:id="@+id/item3"
+        android:layout_width="210dp"
+        android:layout_height="260dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/for_row"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/mot2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/fixed_swiper_y"
+        app:layout_constraintStart_toStartOf="@+id/got2"
+        app:layout_constraintTop_toTopOf="@+id/item3" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_wash_24"
+        app:layout_constraintBottom_toBottomOf="@+id/mot2"
+        app:layout_constraintEnd_toEndOf="@+id/mot2"
+        app:layout_constraintStart_toStartOf="@+id/mot2"
+        app:layout_constraintTop_toTopOf="@+id/mot2" />
+
+    <TextView
+        android:id="@+id/got2"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Установка крана"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/item3"
+        app:layout_constraintStart_toStartOf="@+id/item3"
+        app:layout_constraintTop_toBottomOf="@+id/mot2" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Сделали\n1 ч. назад"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/item3"
+        app:layout_constraintStart_toStartOf="@+id/got2" />
+
+    <View
+        android:id="@+id/item4"
+        android:layout_width="210dp"
+        android:layout_height="260dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/for_row"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/mot3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/fixed_swiper_y"
+        app:layout_constraintStart_toStartOf="@+id/got3"
+        app:layout_constraintTop_toTopOf="@+id/item4" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_settings_remote_24"
+        app:layout_constraintBottom_toBottomOf="@+id/mot3"
+        app:layout_constraintEnd_toEndOf="@+id/mot3"
+        app:layout_constraintStart_toStartOf="@+id/mot3"
+        app:layout_constraintTop_toTopOf="@+id/mot3" />
+
+    <TextView
+        android:id="@+id/got3"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Ремонт WiFi модема"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/item4"
+        app:layout_constraintStart_toStartOf="@+id/item4"
+        app:layout_constraintTop_toBottomOf="@+id/mot3" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Сделали\n2 ч. назад"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/item4"
+        app:layout_constraintStart_toStartOf="@+id/got3" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
