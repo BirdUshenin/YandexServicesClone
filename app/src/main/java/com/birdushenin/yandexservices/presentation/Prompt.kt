@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -24,6 +25,7 @@ class Prompt : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: RecyclerViewHorizontal
+    private lateinit var viewModel: PromptViewModel
 
     private lateinit var gifImageView: ImageView
 
@@ -32,6 +34,7 @@ class Prompt : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentPromptBinding.inflate(layoutInflater)
+        viewModel = ViewModelProvider(this)[PromptViewModel::class.java]
 
         val scrollView = binding.scrollView
         val constraintLayout = binding.constraint3
@@ -39,13 +42,7 @@ class Prompt : Fragment() {
 
         scrollView.viewTreeObserver.addOnScrollChangedListener {
             val scrollY = scrollView.scrollY.toFloat()
-
-            if (scrollY >= constraintLayoutOriginalY) {
-                constraintLayout.y = scrollY
-
-            } else {
-                constraintLayout.y = constraintLayoutOriginalY
-            }
+            viewModel.handleScroll(constraintLayout, scrollY, constraintLayoutOriginalY)
         }
 
         gifImageView = binding.imageView34
@@ -57,18 +54,14 @@ class Prompt : Fragment() {
             LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
         recyclerView.adapter = adapter
 
-        binding.button.setOnClickListener{
-            StartSearch()
+        binding.button.setOnClickListener {
+            viewModel.startSearch(findNavController(), R.id.action_prompt_to_home62)
         }
-        binding.imageView33.setOnClickListener{
-            StartSearch()
+        binding.imageView33.setOnClickListener {
+            viewModel.startSearch(findNavController(), R.id.action_prompt_to_home62)
         }
 
         return binding.root
-    }
-
-    private fun StartSearch() {
-        findNavController().navigate(R.id.action_prompt_to_home62)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
